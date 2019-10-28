@@ -1,4 +1,11 @@
 ## Latest
+  * New features about pedestrians:
+    * They will try to avoid vehicles
+    * They can walk only through sidewalks, and cross the road through the cross zones defined
+    * A user defined % of pedestrians will be allowed to cross roads freely. 
+      The user can define this % with the API function:
+        world.set_pedestrians_cross_factor(0.01)
+        This call will allow 1% of pedestrians to cross through roads
   * Now all the camera-based sensors are provided with an additional parametrized lens distortion shader
   * Updated manual_control.py with a lens disortion effect example
   * Exposed rgb camera attributes: exposure, depth of field, tonemapper, color correction, and chromatic aberration
